@@ -8,11 +8,8 @@
   </head>
   <body>
     <h1>Movies</h1>
-    <ul>
-      {% for movie in movies %}
-      <li><a href="{{movie.id}}">{{movie.title}}</a></li>
-      {% endfor %}
-    </ul>
-    <a href="/movies/add">Add a Movie</a>
+      <p>{{movie.title}}</p>
+      <p>{{movie.year}}</p>
+      <a href="/movies/delete/{{movie.id}}">Delete</a>
   </body>
 </html>
